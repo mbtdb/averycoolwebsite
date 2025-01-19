@@ -38,38 +38,35 @@
             cursor: pointer;
             margin-left: 2px;
         }
+
+        /* Tab Bar (Context Menu Look) */
         .tab-bar {
             display: flex;
-            margin-top: 2px;
             background: #C3C7CB;
             border-top: 1px solid #000;
-            padding: 1px 0;
+            padding: 0;
         }
         .tab-bar a {
             color: black;
-            padding: 4px 8px;
+            padding: 6px 12px;
             text-decoration: none;
-            border: 1px solid #000;
+            border-right: 1px solid #000;
             background: #E4E4E4;
-            margin-left: 2px;
-            box-shadow: 1px 1px 0px #7F7F7F, -1px -1px 0px #FFF;
             font-size: 12px;
             text-align: center;
-            border-radius: 3px 3px 0 0;
+            display: block;
         }
         .tab-bar a:hover {
             background: #B0B0B0;
-            box-shadow: inset 1px 1px 2px #000;
         }
         .tab-bar a.active {
-            background: #000080;
-            color: white;
+            background: #D6D6D6;
             font-weight: bold;
-            box-shadow: inset 1px 1px 2px #FFF;
         }
-        .tab-bar a:first-child {
-            margin-left: 0;
+        .tab-bar a:last-child {
+            border-right: none;
         }
+
         .content {
             padding: 8px;
         }
