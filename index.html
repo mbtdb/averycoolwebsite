@@ -13,10 +13,31 @@
             text-align: center;
         }
         header {
-            background-color: purple;
-            color: yellow;
+            background-color: darkgreen;
+            color: white;
             padding: 20px;
-            box-shadow: 0 0 20px magenta;
+            box-shadow: 0 0 20px lime;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .browser-bar {
+            background-color: #4b5320;
+            padding: 10px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .browser-bar div {
+            display: flex;
+            gap: 10px;
+        }
+        .browser-bar div span {
+            background-color: lime;
+            color: black;
+            padding: 5px;
+            border-radius: 5px;
         }
         nav ul {
             list-style: none;
@@ -27,7 +48,7 @@
             margin: 0 15px;
         }
         nav ul li a {
-            color: cyan;
+            color: lime;
             text-decoration: none;
             font-weight: bold;
         }
@@ -36,6 +57,10 @@
         }
         main {
             margin: 20px;
+            padding: 20px;
+            background: rgba(0, 100, 0, 0.8);
+            border-radius: 10px;
+            color: white;
         }
         footer {
             background-color: black;
@@ -50,11 +75,23 @@
             font-size: 1.5em;
         }
         .about-me {
-            margin-top: 30px;
             padding: 15px;
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: #003300;
             color: white;
+            border: 3px solid lime;
             border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile-picture {
+            border: 5px solid lime;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            background: url('assets/images/pfp.jpg') no-repeat center;
+            background-size: cover;
+            margin-bottom: 15px;
         }
     </style>
 </head>
@@ -62,27 +99,34 @@
     <div class="container">
         <header>
             <h1>About Me</h1>
-            <marquee>Get to know the one behind the screen!</marquee>
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/projects">Projects</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
-            </nav>
+            <marquee>Welcome to my 90's-inspired personal space!</marquee>
         </header>
+        <div class="browser-bar">
+            <div>
+                <span>File</span>
+                <span>Edit</span>
+                <span>View</span>
+                <span>Help</span>
+            </div>
+            <span>My Cool Website</span>
+            <div>
+                <span>⬜</span>
+                <span>🔲</span>
+                <span>❌</span>
+            </div>
+        </div>
         <main>
             <section class="about-me">
-                <h2>Welcome!</h2>
-                <p>My name is Farviz Machitidze. I'm Georgian born in Moscow. I know Georgian, Russian, and English.</p>
-                <p>My current hobbies are programming, gaming, and tinkering with old technology. I love exploring how things work and bringing retro devices back to life.</p>
-                <p>Favorite artist: Laufey. Her music keeps me inspired and grounded as I work on my projects.</p>
-                <p>This website is a mix of 90's nostalgia and my passion for creativity. I hope you enjoy it!</p>
+                <div class="profile-picture"></div>
+                <h2>Hi, I'm Farviz!</h2>
+                <p>I'm Georgian, born in Moscow, and fluent in Georgian, Russian, and English.</p>
+                <p>I love programming, gaming, and tinkering with old technology. Restoring retro devices and giving them a second life is my passion.</p>
+                <p>Favorite artist: Laufey. Her music is my constant source of inspiration!</p>
+                <p>This site combines my love for 90's nostalgia and modern creativity. Thanks for stopping by!</p>
             </section>
         </main>
         <footer>
-            <p>&copy; 2025 Farviz Machitidze - Made with Stardust and Nostalgia</p>
+            <p>&copy; 2025 Farviz Machitidze - Crafted with retro vibes and stardust!</p>
         </footer>
     </div>
 </body>
