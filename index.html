@@ -13,6 +13,8 @@
             margin: 0;
             padding: 0;
             font-size: 14px;
+            -webkit-font-smoothing: none; /* Disable anti-aliasing */
+            -moz-osx-font-smoothing: none; /* Disable anti-aliasing on MacOS */
         }
         .window {
             margin: 10px auto;
@@ -48,13 +50,16 @@
         }
         .tab-bar a {
             color: black;
-            padding: 6px 12px;
+            padding: 3px 8px; /* Shorten height by reducing padding */
             text-decoration: none;
             border-right: 1px solid #000;
             background: #E4E4E4;
             font-size: 12px;
             text-align: center;
             display: block;
+            font-family: Tahoma, Geneva, sans-serif;
+            -webkit-font-smoothing: none; /* Disable anti-aliasing */
+            -moz-osx-font-smoothing: none; /* Disable anti-aliasing */
         }
         .tab-bar a:hover {
             background: #B0B0B0;
