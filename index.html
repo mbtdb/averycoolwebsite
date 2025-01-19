@@ -40,23 +40,33 @@
         }
         .tab-bar {
             display: flex;
-            margin-top: 3px;
-            background: #000080;
+            margin-top: 2px;
+            background: #C3C7CB;
             border-top: 1px solid #000;
-            font-size: 12px;
         }
         .tab-bar a {
-            color: white;
-            padding: 5px 10px;
+            color: black;
+            padding: 4px 8px;
             text-decoration: none;
-            border-right: 1px solid #000;
+            border: 1px solid #000;
+            border-bottom: none;
+            background: #E4E4E4;
+            margin-left: 2px;
+            box-shadow: 1px 1px 0px #7F7F7F, -1px -1px 0px #FFF;
+            font-size: 12px;
             text-align: center;
         }
         .tab-bar a:hover {
-            background-color: #C3C7CB;
+            background-color: #B0B0B0;
         }
-        .tab-bar a:last-child {
-            border-right: none;
+        .tab-bar a.active {
+            background: #000080;
+            color: white;
+            font-weight: bold;
+            box-shadow: none;
+        }
+        .tab-bar a:first-child {
+            margin-left: 0;
         }
         .content {
             padding: 8px;
@@ -116,7 +126,7 @@
         </div>
         <!-- Tab Bar -->
         <div class="tab-bar">
-            <a href="#">About Me</a>
+            <a href="#" class="active">About Me</a>
             <a href="#">Portfolio</a>
             <a href="#">My Socials</a>
             <a href="#">Contact Me</a>
