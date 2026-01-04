@@ -163,7 +163,7 @@ function headerHTML() {
 </style>
 
         </div>
-        <hr style="opacity:0.4">
+        
         <div class="sidebar-section">
           <div class="sidebar-title">Fishies:</div>
           <blockquote>

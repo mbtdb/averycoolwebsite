@@ -107,9 +107,6 @@ function headerHTML() {
     <img src="h57.gif" alt="">
           </marquee>
         <hr style="opacity:0.4">
-        
-      </aside>
-	
 	  
       <!-- =============================================== -->
       <!-- RIGHT SIDEBAR -->
@@ -163,15 +160,23 @@ function headerHTML() {
 </style>
 
         </div>
-        <hr style="opacity:0.4">
+        
         <div class="sidebar-section">
-          <div class="sidebar-title">Fishies:</div>
+          <div class="sidebar-title">Section Title</div>
           <blockquote>
           <iframe width="130" height="250" frameborder="2" src="https://cdn.abowman.com/widgets/fish/fish.html?up\_backgroundColor=8ae7ea&up\_numFish=5&up\_fishColor1=f45540&up\_fishColor2=e1549f&up\_fishColor3=625ce1&up\_fishColor4=e0c31e&up\_fishColor5=f45540&up\_fishColor6=f45540&up\_fishColor7=f45540&up\_fishColor8=f45540&up\_fishColor9=f45540&up\_fishColor10=f45540"></iframe>
           </blockquote>
         </div>
         
-  <hr style="opacity:0.4">
+        <div class="sidebar-section">
+          <div class="sidebar-title">Section Title</div>
+          <ul>
+            <li>List</li>
+            <li>List</li>
+            <li><a href="/">List</a></li>
+            <li>List</li>
+          </ul>
+        </div>
         
         <div class="sidebar-section">
           <div class="sidebar-title">Awesome People/Sites:</div>
