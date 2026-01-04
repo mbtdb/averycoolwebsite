@@ -184,10 +184,7 @@ function footerHTML() {
       <!-- =============================================== -->
 
       <footer>
-            <div class="footer-counter">
-              <script type="text/javascript" src="https://counter.websiteout.com/js/22/6/0/0"></script>
-            </div>
-            <div class="footer-text">Footer Text. <a href="/">Link.</a> Template generated with <a href="https://petrapixel.neocities.org/coding/layout-generator.html">petrapixel's layout generator</a>.</div>
+            <div>Footer Text. <a href="/">Link.</a> Template generated with <a href="https://petrapixel.neocities.org/coding/layout-generator.html">petrapixel's layout generator</a>.</div>
       </footer>`;
 }
 
