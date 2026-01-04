@@ -35,9 +35,9 @@ function headerHTML() {
 	        <nav>
 	          <ul>
 	            <li><a href="/">Home</a></li>
-	            <li><a href="/page1">Contact info</a></li>
-	            <li><a href="/page2">Thoughts</a></li>
-	            <li><a href="/page3">Pictures</a></li>
+	            <li><a href="/contact">Contact info</a></li>
+	            <li><a href="/thoughts">Thoughts</a></li>
+	            <li><a href="/pictures">Pictures</a></li>
                 <!--
                 <li>
                     <strong>Submenu (hover to show)</strong>
@@ -184,7 +184,10 @@ function footerHTML() {
       <!-- =============================================== -->
 
       <footer>
-            <div>Footer Text. <a href="/">Link.</a> Template generated with <a href="https://petrapixel.neocities.org/coding/layout-generator.html">petrapixel's layout generator</a>.</div>
+            <div class="footer-counter">
+              <script type="text/javascript" src="https://counter.websiteout.com/js/22/6/0/0"></script>
+            </div>
+            <div class="footer-text">Footer Text. <a href="/">Link.</a> Template generated with <a href="https://petrapixel.neocities.org/coding/layout-generator.html">petrapixel's layout generator</a>.</div>
       </footer>`;
 }
 

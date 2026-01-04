@@ -54,12 +54,6 @@ body {
   background-size: cover;
 }
 
-#site-counter {
-  position: fixed;
-  left: 10px;
-  bottom: 10px;
-  z-index: 10;
-}
 
 ::selection {
   /* (Text highlighted by the user) */
@@ -223,6 +217,19 @@ footer {
   background: var(--content-background-color);
   display: flex;
   justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 32px;
+}
+
+.footer-counter {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+
+.footer-text {
+  text-align: center;
 }
 
 footer a,
