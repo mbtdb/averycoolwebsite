@@ -54,6 +54,13 @@ body {
   background-size: cover;
 }
 
+#site-counter {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  z-index: 10;
+}
+
 ::selection {
   /* (Text highlighted by the user) */
   background: rgba(0, 0, 0, 0.2);
