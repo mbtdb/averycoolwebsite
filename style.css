@@ -387,10 +387,16 @@ main center {
     padding: 0 1em;
 }
 
-main hr {
+main hr, aside hr {
     border: 0;
-    border-top: var(--border);
+    height: 4px;
     margin: 1.5em 0;
+    background-image: repeating-linear-gradient(
+        90deg,
+        #8fa89b 0px, #8fa89b 4px,
+        transparent 4px, transparent 8px
+    );
+    image-rendering: pixelated;
 }
 
 /* HEADINGS: */
@@ -567,4 +573,22 @@ main h6 {
     #skip-to-content-link {
         font-size: 1rem;
     }
+}
+
+/* -------------------------------------------------------- */
+/* SPARKLE CURSOR TRAIL */
+/* -------------------------------------------------------- */
+.sparkle {
+    position: absolute;
+    pointer-events: none;
+    font-size: 14px;
+    color: #8fc3a6;
+    animation: sparkle-fade 0.8s ease-out forwards;
+    z-index: 9999;
+    user-select: none;
+}
+
+@keyframes sparkle-fade {
+    0%   { opacity: 1; transform: translateY(0) scale(1); }
+    100% { opacity: 0; transform: translateY(-20px) scale(0.4); }
 }

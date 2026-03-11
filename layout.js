@@ -3,6 +3,18 @@ document.addEventListener("DOMContentLoaded", function () {
   loadLayoutByPetraPixel();
 
   // Add any custom JavaScript code here...
+
+  // Sparkle cursor trail
+  const sparkleChars = ['✦','✧','★','✩','✺'];
+  document.addEventListener('mousemove', (e) => {
+    const span = document.createElement('span');
+    span.classList.add('sparkle');
+    span.style.left = e.pageX + 'px';
+    span.style.top  = e.pageY + 'px';
+    span.textContent = sparkleChars[Math.floor(Math.random() * sparkleChars.length)];
+    document.body.appendChild(span);
+    setTimeout(() => span.remove(), 800);
+  });
 });
 
 function loadLayoutByPetraPixel() {
